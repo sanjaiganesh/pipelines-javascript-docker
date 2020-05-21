@@ -1,11 +1,6 @@
-FROM node:8
+FROM scratch
 
-WORKDIR /usr/src/app
+WORKDIR /usr/data/openapispecs
+COPY .. .
 
-COPY package*.json ./
-RUN npm ci --only=production
-
-COPY . .
-
-EXPOSE 8080
-CMD [ "npm", "start" ]
+ENTRYPOINT ["/no/such/file"]
