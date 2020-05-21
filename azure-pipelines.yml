@@ -9,8 +9,11 @@ variables:
 
 steps:
 - task: Docker@2
-  displayName: Build an image
+  displayName: Build and Push
   inputs:
+    command: buildAndPush
+    containerRegistry: fedten
     repository: $(imageName)
-    command: build
-    Dockerfile: app/Dockerfile
+    tags: |
+      latest
+      v0.1.1
