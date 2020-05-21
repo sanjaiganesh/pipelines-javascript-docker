@@ -1,6 +1,6 @@
 FROM scratch
 
 WORKDIR /usr/data/openapispecs
-COPY .. .
+COPY . .
 
 ENTRYPOINT ["/no/such/file"]
