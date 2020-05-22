@@ -3,4 +3,4 @@ FROM scratch
 WORKDIR /usr/data/openapispecs
 COPY . .
 
-ENTRYPOINT ["/no/such/file"]
+CMD while true; do sleep 15 ; echo "background"; done &
