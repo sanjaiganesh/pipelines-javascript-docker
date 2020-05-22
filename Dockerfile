@@ -1,4 +1,4 @@
-FROM busybox
+FROM alpine/git
 
 WORKDIR /usr/data/
 RUN git clone https://github.com/sanjaiganesh/pipelines-javascript-docker.git openapispecs
