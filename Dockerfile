@@ -1,4 +1,4 @@
-FROM scratch
+FROM busybox
 
 WORKDIR /usr/data/openapispecs
 COPY . .
