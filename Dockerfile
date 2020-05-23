@@ -4,6 +4,6 @@ RUN apk update && \
     apk add git
 
 WORKDIR /usr/data/
-RUN git clone https://github.com/sanjaiganesh/pipelines-javascript-docker.git ./openapispecs2
+RUN git clone https://github.com/sanjaiganesh/pipelines-javascript-docker.git ./openapispecs3
 
 ENTRYPOINT ["/bin/sh"]
