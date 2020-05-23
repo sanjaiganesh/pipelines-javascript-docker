@@ -19,7 +19,7 @@ steps:
     command: buildAndPush
     containerRegistry: fedten
     repository: $(imageName)
-    Dockerfile: Dockerfile
+    Dockerfile: app/Dockerfile
     tags: |
       latest
       v0.1.1
