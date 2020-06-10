@@ -1,5 +1,5 @@
 trigger:
-- master
+- protobranch
 
 pool:
   vmImage: 'Ubuntu-16.04'
@@ -22,4 +22,4 @@ steps:
     Dockerfile: app/Dockerfile
     tags: |
       latest
-      v0.1.3
+      v0.1.4
