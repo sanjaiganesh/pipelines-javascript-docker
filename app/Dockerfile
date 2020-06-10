@@ -4,7 +4,8 @@ RUN apk update && \
     apk add git
 
 WORKDIR /usr/data/
-RUN git clone https://github.com/sanjaiganesh/pipelines-javascript-docker.git ./openapispecs
+RUN git clone https://github.com/sanjaiganesh/pipelines-javascript-docker.git ./specrepo
+RUN cp -R /specrepo/* /usr/data/openapispecs/
 
 WORKDIR /usr/data/scripts/
 COPY run.sh run.sh
