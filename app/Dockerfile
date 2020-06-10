@@ -14,5 +14,5 @@ WORKDIR /usr/data/scripts/
 COPY run.sh run.sh
 RUN chmod +x run.sh
 
-WORKDIR /usr/data/openapispecs
+WORKDIR /usr/data/specrepo
 ENTRYPOINT /usr/data/scripts/run.sh
